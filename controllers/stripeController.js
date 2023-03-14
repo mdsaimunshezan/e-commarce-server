@@ -60,8 +60,8 @@ export const payment = async (req, res) => {
       }),
       customer: customer.id,
       mode: "payment",
-      success_url: `http://localhost:3000/user?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: "http://localhost:3000/cart",
+      success_url: `https://chawk-bazer.netlify.app/user?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: "https://chawk-bazer.netlify.app/cart",
     });
 
     res.json({ url: session.url });
